@@ -1,0 +1,118 @@
+.main-banner {
+    background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #0142a0 0, #0f133a 44.41%, #101034 56.43%, #141034 69.58%, #301436 100%);
+    color: #fff;
+    padding: 2rem 1rem 0;
+}
+
+/* Titulo y descripcion */
+.title {
+    font-family: Orbitron, sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.line-2 {
+    color: #16f4d0;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1024px){
+    .title {
+        font-size: 2.5rem;
+    }
+    .description {
+        justify-content: flex-start;
+        font-size: 1rem;
+    }
+}
+
+/* Fin: Titulo y descrpcion */
+
+/* Inicio Countdown */
+.countdown {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-item {
+    padding: 0 .75rem;
+    position: relative;
+    align-items: center;
+    
+}
+
+.countdown-item:not(:last-of-type):before {
+    position: absolute;
+    right: 0;
+    content: '';
+    display: block;
+    width: 1px;
+    height: 60%;
+    background: #fff;
+    opacity: .5;
+}
+
+.countdown-number {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-right: .25rem;
+    color: #dfa6f9;
+}
+
+.countdown-text {
+    font-weight: bold;
+    font-size: 0.8em;
+    opacity: 0.6;
+    margin: 0 0.5rem 0 0.3rem;
+}
+
+.countdown-letter {
+    opacity: .5;
+}
+
+@media screen and (min-width: 1024px){
+    .countdown{
+        justify-content: flex-start;
+    }
+}
+
+/* Fin: Countdown */
+
+/* Formulario */
+.form-container {
+    height: 2.5rem;
+}
+
+.form {
+    display: inline-flex;
+}
+
+.input {
+    line-height: 2.5rem;
+    width: 15rem;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, .4);
+    padding: 0 .5rem;
+    border-radius: .25rem 0 0 .25rem;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, .8);
+}
+
+.button{
+    padding: 0 1rem;
+    border-radius: 0 .25rem .25rem 0;
+    border: none;
+}
+.form-hint{
+    font-size: .7rem;
+    margin: 0 0 1rem 0;
+}
